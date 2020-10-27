@@ -68,7 +68,7 @@ void addElementPIF(char *key){
 void pif_dumb(FILE *of){
 
     for(int i = 0; i < pifLength; ++i){
-        fprintf(of,PIF[i].key,PIF[i].value);
+        fprintf(of,"%s\t%d\n",PIF[i].key,PIF[i].value);
         fprintf(of,"\n");
     }
 }

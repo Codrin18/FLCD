@@ -69,7 +69,7 @@ STRING \"{print}*\"
                     // insert identifier into symbol table
                     insert(yytext, strlen(yytext), UNDEF, lineno);
                     addIdentifier(yytext, pozID);
-                    
+                    ++pozID;
                     ret_print("ID");
                 }
 {INTCONST}        { ret_print("INTCONST"); }
