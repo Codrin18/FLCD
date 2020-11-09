@@ -1,0 +1,17 @@
+Finite Automata Specification
+
+finiteAutomata = 
+        "Q = {" states "}"
+        "E = {" alphabet "}"
+        "q0 = {" initialState "}"
+        "F = {" finalStates "}"
+        "D = {\n" transitions "\n}"
+states = state {", " state}
+alphabet = alpha {", " alpha}
+initialState = state 
+finalStates = states
+transitions = transition {", " transition} \n
+state = alpha {alphanum}
+transition = "(" state " " alpha ") - " state
+alphanum = "0" | "1" | ... | "9" | alpha
+alpha = "a" | "b" | ... | "z" | "A" | ... | "Z" 
