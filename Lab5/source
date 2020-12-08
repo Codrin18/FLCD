@@ -1,0 +1,22 @@
+VAR
+    INT:X,Y,Z;
+    INT:OK;
+READ(X);
+READ(Y);
+
+Z=X+Y;
+OK=0;
+
+IF Z > 10 : 
+    Z = Z - 12;
+    X = 1;
+    Y = 2;
+ELSE : 
+    Z = Z + 20;
+    X = 10;
+    Y = 13;
+END-IF
+
+IF X < Y :
+    OK = 1; 
+ 
